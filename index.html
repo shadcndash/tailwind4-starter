@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+    <!-- Header -->
+    <header class="w-full bg-white dark:bg-neutral-800 shadow-md">
+      <div class="@container max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+        <!-- logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-400">Starter</a>
+        <!-- tigger -->
+        <button class="@lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
+
+        <nav class="space-x-6 @max-lg:hidden">
+          <a href="#hero" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">Home</a>
+          <a href="#services" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">Services</a>
+          <a href="#pricing" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">Pricing</a>
+          <a href="#action" class="text-gray-600 dark:text-gray-200 hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="relative bg-linear-to-r from-blue-600 to-purple-400 text-white px-6 py-16">
+        <div class="@container max-w-6xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Tailwind Css 4 Starter Template</h1>
+          <p class="text-lg md:text-xl mb-6">Tailwind Css 4.0.0 starter template with Tailwind CLI Build system.</p>
+          <div class="bg-black px-3 py-2 rounded-full text-white max-w-lg mx-auto mb-3">npm run dev</div>
+          <div class="bg-gray-100 px-3 py-2 rounded-full text-black max-w-lg mx-auto">npm run build</div>
+        </div>
+      </section>
+
+      <!-- Service Section -->
+      <section id="services" class="relative px-6 py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="@container max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-white dark:bg-neutral-700 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-blue-600">Custom Templates</h3>
+              <p class="text-gray-600 dark:text-gray-300">Get access to a variety of professionally designed templates.</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-neutral-700 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-blue-600">Fast Development</h3>
+              <p class="text-gray-600 dark:text-gray-300">Save time with ready-to-use code and flexible tools.</p>
+            </div>
+            <div class="p-6 bg-white dark:bg-neutral-700 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4 text-blue-600">24/7 Support</h3>
+              <p class="text-gray-600 dark:text-gray-300">We are here to help anytime you need assistance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="relative px-6 py-16 bg-white dark:bg-neutral-900">
+        <div class="@container max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">Pricing Plans</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="py-12 px-6 border border-gray-200 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-2 text-blue-600">Basic</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-8">$9/month</p>
+              <ul class="space-y-2 mb-8">
+                <li>5 Templates</li>
+                <li>Email Support</li>
+              </ul>
+              <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md">Choose Plan</a>
+            </div>
+            <div class="py-12 px-6 border border-gray-200 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-2 text-blue-600">Pro</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-8">$29/month</p>
+              <ul class="space-y-2 mb-8">
+                <li>20 Templates</li>
+                <li>Priority Support</li>
+              </ul>
+              <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md">Choose Plan</a>
+            </div>
+            <div class="py-12 px-6 border border-gray-200 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-2 text-blue-600">Enterprise</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-8">Custom Pricing</p>
+              <ul class="space-y-2 mb-8">
+                <li>Unlimited Templates</li>
+                <li>Dedicated Support</li>
+              </ul>
+              <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-md">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Action Section -->
+      <section id="action" class="relative px-6 py-16 bg-blue-600 text-white text-center">
+        <div class="@container max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <p class="text-lg mb-6">Sign up today and start building your projects with ease.</p>
+          <a href="#" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-md shadow-md hover:bg-gray-100">
+            Join Now
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-800 text-gray-400 py-6">
+      <div class="@container max-w-6xl mx-auto text-center">
+        <p>© 2025 Starter Template by <a href="https://tailwinddashboard.com/" target="_blank">Taildash</a></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
